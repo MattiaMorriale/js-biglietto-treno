@@ -8,18 +8,16 @@ document.getElementById("age").innerHTML = age;
 
 const prezzo = 0.21;
 
-document.getElementById("prezzo").innerHTML = prezzo;
-
 const pfinale = prezzo * km;
 
-document.getElementById("pfinale").innerHTML = (pfinale).toFixed(2);
+document.getElementById("pfinale").innerHTML = pfinale.toFixed(2);
 
 if ( age < 18 ) {
 
-    document.getElementById("pfinale").innerHTML = (pfinale - ( pfinale * 20 / 100 )).toFixed(2);
+    document.getElementById("pfinale").innerHTML = pfinale - ( pfinale * 20 / 100 ).toFixed(2);
 
 } else if ( age > 64 ) {
 
-    document.getElementById("pfinale").innerHTML = (pfinale - ( pfinale * 40 / 100 )).toFixed(2);
+    document.getElementById("pfinale").innerHTML = pfinale - ( pfinale * 40 / 100 ).toFixed(2);
 
 }
